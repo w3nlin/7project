@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width:400px;
+            height:400px;
+            background:blue;
+            position: relative;
+            top:0;
+            left:0;
+        }
+    </style>
+    <script src="jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                /*$("div").animate({top:100,left:100},2000)*/
+                $("div").animate({top:100},2000).animate({left:100},1000).animate({left:100},1000)
+            })
+
+        })
+    </script>
+</head>
+<body>
+<button>click</button>
+<div></div>
+</body>
+</html>
